@@ -1,0 +1,17 @@
+#------ignore everything
+/** 
+
+#------except these files in current directory
+!.vimrc
+!.gitignore
+
+#------and the init.vim file in this subdirectory
+#for this the subdirectory must first be un-ignored
+!.config/
+#and all files within ignored
+.config/**
+#except the next subdirectory that is of interest (and so on..)
+!/.config/nvim/
+/.config/nvim/**
+!/.config/nvim/init.vim
+
